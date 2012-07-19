@@ -1,0 +1,18 @@
+Source: libvmod-cookie
+Section: web
+Priority: optional
+Maintainer: Rich Healey <richo@99designs.com>
+Build-Depends: varnish (>= 3), build-essential, python-docutils
+Standards-Version: 3.7.2
+
+Package: libvmod-cookie
+Architecture: any
+Depends: varnish (>= 3)
+Description: varnish vmod for manipulation and handling of client cookies
+ Functions to handle the content of the Cookie header without complex use of
+ regular expressions.
+
+ Reads the req.http.cookie header, ie it only considers incoming cookies from
+ the client.
+
+ Any Set-Cookie header from the backend is currently ignored.
